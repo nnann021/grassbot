@@ -75,7 +75,7 @@ async def main():
     #find user_id on the site in conlose localStorage.getItem('userId') (if you can't get it, write allow pasting)
     _user_id = input('Please Enter your user ID: ')
     #put the proxy in a file in the format socks5://username:password@ip:port or socks5://ip:port
-    r = requests.get("https://github.com/monosans/proxy-list/raw/main/proxies/all.txt", stream=True)
+    r = requests.get("https://github.com/nnann021/PROXY-List/raw/master/socks5.txt", stream=True)
     if r.status_code == 200:
         with open('socks5.txt', 'wb') as f:
             for chunk in r:
